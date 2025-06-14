@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo de Clique - Discord Activity</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #202225;
+      color: #fff;
+      text-align: center;
+      padding-top: 50px;
+    }
+    button {
+      font-size: 24px;
+      padding: 20px;
+      border-radius: 10px;
+      border: none;
+      background: #5865F2;
+      color: white;
+      cursor: pointer;
+    }
+    h1, p {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Jogo de Clique!</h1>
+  <p>Pontuação: <span id="score">0</span></p>
+  <button onclick="aumentar()">Clique aqui!</button>
+
+  <script>
+    let score = 0;
+    function aumentar() {
+      score++;
+      document.getElementById("score").innerText = score;
+    }
+  </script>
+</body>
+</html>
